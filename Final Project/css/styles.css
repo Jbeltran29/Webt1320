@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+    background-color: #343440;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Mobile Styles*/
+
+#container {
+    background-color: #024959;
+    margin: 10px;
+}
+
+header {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    padding: 60px 0;
+}
+
+header h1 {
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    background-color: #03A696;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+nav li a:hover {
+    background-color: #024959;
+}
+
+nav, section, .col, footer {
+    background-color: #BFBDBD;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #03A696;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    font-size: 1.5em;
+    text-align: center;
+}
+section img {
+    width: 70%;
+    border-radius: 10px;
+    border: 4px solid #03A696;
+}
+
+.button {
+    display: block;
+    background-color: #03A696;
+    color: black;
+    height: 40px;
+    width: 175px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #024959;
+}
+
+footer {
+    text-align: center;
+}
+
+audio, iframe {
+    display: block;
+    margin: 20px auto;
+    width: 75%;
+}
+
+.hobbies_img {
+    border: 4px solid #03A696;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+table {
+    display: none;
+}
+
+/* Tablet Styles */
+
+@media(min-width: 768px) {
+    header{
+        padding: 100px;
+    }
+    
+    header h1 {
+        font-size: 3em;
+    }
+
+    .col img {
+        width: 50%;
+        border-radius: 10px;
+        border: 4px solid #03A696;
+    }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+    #container {
+        width: 80%;
+        margin: 20px auto;
+        border: 4px solid #03A696;
+        border-radius: 20px;
+    }
+
+    header {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #lower_flex {
+        display: flex;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .col img {
+        width: 70%;
+    }
+
+    table, tr, td {
+        border: 4px solid #03A696;
+        padding: 50px;
+        margin: 50px ;
+    }
+    table img {
+        width: 100%;
+    }
+
+    .hobbies {
+        display: none;
+    }
+
+    table {
+        display: block;
+    }
+}
